@@ -143,6 +143,29 @@ h1{font-size: clamp(1.8rem, 4vw, 2.6rem); line-height:1.15; margin:0 0 10px}
 .skills{
   display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin-top:14px
 }
+
+.projects{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:16px;
+  margin-top:14px;
+}
+@media (max-width: 900px){
+  .projects{grid-template-columns:1fr}
+}
+.project-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.project-links{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
 @media (max-width: 900px){.skills{grid-template-columns:1fr}}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
 .tags span{
